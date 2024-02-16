@@ -1,0 +1,97 @@
+body {
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 30%;
+    margin: 1.5%;
+    border-radius: 5%;
+    z-index: 2;
+    transition: all 0.5s;
+}
+
+img:hover {
+    border-color: rgb(0, 128, 240);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(200, 128, 40);
+    transform: translateY(-0.5em);
+    cursor: pointer;
+}
+
+img:active {
+    border-color: rgb(0, 128, 240);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em rgb(200, 128, 40);
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+p{
+    margin-left: 50px;
+    margin-top: 0;
+    margin-bottom: 100px;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+.nav {
+    height: 30px;
+    background: linear-gradient(45deg, #10002B, #240046, #3C096C, #5A189A, #7B2CBF, #9D4EDD, #C77DFF, #E0AAFF);
+    background-size: 1000vh 300vh;
+    animation: color 12s ease-in-out infinite;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+    z-index: 2; 
+    transition: all 2s;
+    position: sticky;
+    top:0;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav p:hover{
+    transform:rotateZ(360deg);
+}
+
+.container {
+    height: 100vh 300vh;
+    width: 100%;
+    background: linear-gradient(45deg, #10002B, #240046, #3C096C, #5A189A, #7B2CBF, #9D4EDD, #C77DFF, #E0AAFF);
+    background-size: 1000vh 300vh;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+       background-position: 0 50%;
+    }
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+
+}
+::-webkit-scrollbar-track{
+    background: black;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+
